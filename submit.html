@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Recipes</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo">
+                    <div class="spoon">
+                        <p class="rotate1"><i class="fa-solid fa-spoon"></i></p>
+                        <p class="rotate"><i class="fa-solid fa-spoon"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="home border"><b><a href="indext.html">Home</a></b></div>
+                <div class="submit-recipes border"><b>Submit Recipes</b></div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="form-container">
+        <h1>Submit Your Recipe</h1>
+        <form action="submit_recipe.php" method="post">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe_name" required><br><br>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" rows="4" required></textarea><br><br>
+
+            <label for="method">Method:</label>
+            <textarea id="method" name="method" rows="6" required></textarea><br><br>
+
+            <input type="submit" value="Submit Recipe">
+        </form>
+        <div class="back-link">
+            <a href="indext.html"> Back to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="indext.html">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            </div>
+            <div class="footer-section">
+                <h3><b>Contact Us</b></h3>
+                <p style="color: rgb(137, 183, 223);">Email: info@recipesite.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> &copy 2024 Recipe Sharing Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
